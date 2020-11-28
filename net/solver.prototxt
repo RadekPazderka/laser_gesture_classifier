@@ -1,0 +1,14 @@
+net: "train_val.prototxt"
+test_iter: 100
+test_interval: 100
+base_lr: 0.005
+lr_policy: "step"
+gamma: 0.1
+stepsize: 100000 #TADY SI NEJSEM JISTY, JESTLI JE TO OK, ZDA MI TO NECO NEPOKAZI
+display: 5
+max_iter: 1000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 100
+snapshot_prefix: "models/darkwolfnet/net"
+solver_mode: GPU
